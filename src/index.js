@@ -32,7 +32,7 @@ logger.info('Starting manual database backup...');
 backupAllPostgresDatabases();
 //backupAllMysqlDatabases();
 
-logger.info('iniciando backcup files manual...')
-backupFiles();
+// logger.info('iniciando backcup files manual...')
+// backupFiles();
 
 logger.info('Backup automation script started.');
