@@ -1,0 +1,76 @@
+2024-07-08T14:50:41.269Z [INFO]: Backup automation script started.
+2024-07-08T14:52:36.185Z [INFO]: Backup automation script started.
+2024-07-08T14:55:16.058Z [INFO]: Starting manual database backup...
+2024-07-08T14:55:16.074Z [INFO]: Backup automation script started.
+2024-07-08T14:55:24.475Z [ERROR]: Error during database backup for respaldo_tuimagen: Command failed: PGPASSWORD=1d3@sPr0 pg_dump -h 129.151.123.60 -U server respaldo_tuimagen > //wdmycloudex4100/Public/RespaldoArchivosServidor/db_backup_respaldo_tuimagen_1720450516061.sql
+"PGPASSWORD" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+2024-07-08T14:57:06.563Z [INFO]: Starting manual database backup...
+2024-07-08T14:57:06.576Z [INFO]: Backup automation script started.
+2024-07-08T14:57:29.049Z [ERROR]: Error during database backup for respaldo_tuimagen: Command failed: pg_dump -h 129.151.123.60 -U server -d respaldo_tuimagen -Fc -f \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720450626565.sql
+pg_dump: error: fall� la conexi�n al servidor en �129.151.123.60�, puerto 5432: Connection timed out (0x0000274C/10060)
+	�Est� el servidor en ejecuci�n en ese host y aceptando conexiones TCP/IP?
+
+2024-07-08T14:59:53.294Z [INFO]: Starting manual database backup...
+2024-07-08T14:59:53.305Z [INFO]: Backup automation script started.
+2024-07-08T15:00:26.089Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720450793296.sql
+2024-07-08T15:00:48.556Z [INFO]: Starting manual database backup...
+2024-07-08T15:00:48.570Z [INFO]: Backup automation script started.
+2024-07-08T15:01:17.296Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720450848559.sql
+2024-07-08T15:12:23.151Z [INFO]: Starting manual database backup...
+2024-07-08T15:12:23.167Z [INFO]: Backup automation script started.
+2024-07-08T15:12:54.863Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720451543154.sql
+2024-07-08T15:18:19.923Z [INFO]: Starting manual database backup...
+2024-07-08T15:18:19.937Z [INFO]: Backup automation script started.
+2024-07-08T15:18:53.755Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720451899926.sql
+2024-07-08T15:24:45.395Z [INFO]: Starting manual database backup...
+2024-07-08T15:24:45.412Z [INFO]: Backup automation script started.
+2024-07-08T15:25:17.592Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720452285398.sql
+2024-07-08T15:38:04.203Z [INFO]: Starting manual database backup...
+2024-07-08T15:38:04.231Z [INFO]: Backup automation script started.
+2024-07-08T15:38:04.252Z [ERROR]: Error during database backup for tuimagen_lab: Command failed: mysqldump -h 144.22.47.227 -u user -ppassword -P 3306 tuimagen_lab > "\\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_tuimagen_lab_1720453084218.sql"
+"mysqldump" no se reconoce como un comando interno o externo,
+programa o archivo por lotes ejecutable.
+
+2024-07-08T15:38:35.868Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720453084206.sql
+2024-07-08T15:38:49.302Z [INFO]: Starting manual database backup...
+2024-07-08T15:38:49.320Z [INFO]: Backup automation script started.
+2024-07-08T15:38:49.369Z [ERROR]: Error during database backup for respaldo_tuimagen: Command failed: pg_dump -h 129.151.123.60 -U server -p 5433 -d respaldo_tuimagen -Fc -f "\\wdmycloudex4100\Public\RespaldoArchivosServidor\respaldo_tuimagen\db_backup_respaldo_tuimagen_1720453129305.sql"
+pg_dump: error: no se pudo abrir el archivo de salida �\\wdmycloudex4100\Public\RespaldoArchivosServidor\respaldo_tuimagen\db_backup_respaldo_tuimagen_1720453129305.sql�: No such file or directory
+
+2024-07-08T15:40:27.673Z [INFO]: Starting manual database backup...
+2024-07-08T15:40:27.688Z [INFO]: Backup automation script started.
+2024-07-08T15:42:59.143Z [INFO]: Starting manual database backup...
+2024-07-08T15:42:59.169Z [INFO]: Backup automation script started.
+2024-07-08T15:43:20.269Z [ERROR]: Error during database backup for tuimagen_lab: Command failed: mysqldump -h 144.22.47.227 -u user -p1d3@sPr0 -P 3306 tuimagen_lab > "\\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_tuimagen_lab_1720453379159.sql"
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+mysqldump: Got error: 2003: Can't connect to MySQL server on '144.22.47.227:3306' (10060) when trying to connect
+
+2024-07-08T15:43:33.326Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720453379146.sql
+2024-07-08T15:45:37.362Z [INFO]: Starting manual database backup...
+2024-07-08T15:45:37.375Z [INFO]: Backup automation script started.
+2024-07-08T15:45:58.466Z [ERROR]: Error during database backup for tuimagen_lab: Command failed: mysqldump -h 144.22.47.227 -u user -p1d3@sPr0 -P 3306 tuimagen_lab > "\\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_tuimagen_lab_1720453537365.sql"
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+mysqldump: Got error: 2003: Can't connect to MySQL server on '144.22.47.227:3306' (10060) when trying to connect
+
+2024-07-08T15:47:16.173Z [INFO]: Starting manual database backup...
+2024-07-08T15:47:16.210Z [INFO]: Backup automation script started.
+2024-07-08T15:47:37.293Z [ERROR]: Error during database backup for tuimagen_lab: Command failed: mysqldump -h 144.22.47.227 -u user -p1d3@sPr0 -P 3306 tuimagen_lab > "\\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_tuimagen_lab_1720453636198.sql"
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+mysqldump: Got error: 2003: Can't connect to MySQL server on '144.22.47.227:3306' (10060) when trying to connect
+
+2024-07-08T15:47:47.675Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_1720453636177.sql
+2024-07-08T15:49:53.879Z [INFO]: Starting manual database backup...
+2024-07-08T15:49:53.906Z [INFO]: Backup automation script started.
+2024-07-08T15:50:14.986Z [ERROR]: Error during database backup for tuimagen_lab: Command failed: mysqldump -h 144.22.47.227 -u user -p1d3@sPr0 -P 3306 tuimagen_lab > "\\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_tuimagen_lab_2024-07-08.sql"
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+mysqldump: Got error: 2003: Can't connect to MySQL server on '144.22.47.227:3306' (10060) when trying to connect
+
+2024-07-08T15:50:24.409Z [INFO]: Database backup successful for respaldo_tuimagen: \\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_respaldo_tuimagen_2024-07-08.sql
+2024-07-08T16:08:04.498Z [INFO]: Starting manual database backup...
+2024-07-08T16:08:04.511Z [INFO]: Backup automation script started.
+2024-07-08T16:08:25.615Z [ERROR]: Error during database backup for tuimagen_lab: Command failed: mysqldump -h 144.22.47.227 -u user -p1d3@sPr0 -P 3306 tuimagen_lab > "\\wdmycloudex4100\Public\RespaldoArchivosServidor\db_backup_tuimagen_lab_2024-07-08.sql"
+mysqldump: [Warning] Using a password on the command line interface can be insecure.
+mysqldump: Got error: 2003: Can't connect to MySQL server on '144.22.47.227:3306' (10060) when trying to connect
+
