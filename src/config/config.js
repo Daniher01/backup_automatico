@@ -34,5 +34,10 @@ module.exports = {
     //   port: process.env.nuevoproyecto_DB_PORT
     // }
   ],
-  backupPath: process.env.BACKUP_PATH
+  backupPath: process.env.BACKUP_PATH,
+  sourceDir: process.env.SOURCE_DIR,
+  serverIp: process.env.SERVER_IP,
+  serverUser: process.env.SERVER_USER,
+  sshPort: process.env.SSH_PORT,
+  sshKeyPath: process.env.SSH_KEY_PATH
 };

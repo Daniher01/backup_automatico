@@ -1,7 +1,7 @@
 const cron = require('node-cron');
 const backupAllPostgresDatabases = require('./backups/postgresBackup');
 const backupAllMysqlDatabases = require('./backups/mysqlBackup');
-const backupFiles = require('./backups/fileBackup');
+const backupFiles = require('./backups/backupFiles');
 const logger = require('./utils/logger');
 
 /*
@@ -29,7 +29,10 @@ const logger = require('./utils/logger');
 
 // ? ejecucion manual
 logger.info('Starting manual database backup...');
-//backupAllPostgresDatabases();
-backupAllMysqlDatabases();
+backupAllPostgresDatabases();
+//backupAllMysqlDatabases();
+
+logger.info('iniciando backcup files manual...')
+backupFiles();
 
 logger.info('Backup automation script started.');
