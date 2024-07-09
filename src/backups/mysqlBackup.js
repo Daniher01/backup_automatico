@@ -11,7 +11,7 @@ const getFormattedDate = () => {
 const backupMysqlDatabase = (db) => {
   const { host, user, password, name, port } = db;
   const formattedDate = getFormattedDate();
-  const backupPath = path.join(config.backupPath, `db_backup_${name}_${formattedDate}.sql`);
+  const backupPath = path.join(config.backupPathVirtual, `db_backup_${name}_${formattedDate}.sql`);
   const command = `mysqldump -h ${host} -u ${user} -p${password} -P ${port} ${name} > "${backupPath}"`;
 
   exec(command, (error, stdout, stderr) => {

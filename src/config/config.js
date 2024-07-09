@@ -34,10 +34,21 @@ module.exports = {
     //   port: process.env.nuevoproyecto_DB_PORT
     // }
   ],
-  backupPath: process.env.BACKUP_PATH,
+  backupPathVirtual: process.env.BACKUP_PATH_VIRTUAL,
+  backupPathOriginal: process.env.BACKUP_PATH_ORIGINAL,
   sourceDir: process.env.SOURCE_DIR,
   serverIp: process.env.SERVER_IP,
   serverUser: process.env.SERVER_USER,
   sshPort: process.env.SSH_PORT,
-  sshKeyPath: process.env.SSH_KEY_PATH
+  sshKeyPath: process.env.SSH_KEY_PATH,
+  email: {
+    service: 'gmail',
+    auth: {
+      user: 'tuimagenprueba@gmail.com',
+      pass: 'evlkwbpocfppiokw'
+    },
+    from: 'tuimagenprueba@gmail.com',
+    to: ['daniher02@gmail.com'], // Lista de destinatarios principales
+    cc: ['johakrys1109@gmail.com'] // Lista de destinatarios en copia
+  }
 };
