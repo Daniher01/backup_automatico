@@ -44,8 +44,8 @@ module.exports = {
   email: {
     service: 'gmail',
     auth: {
-      user: 'tuimagenprueba@gmail.com',
-      pass: 'evlkwbpocfppiokw'
+      user: process.env.AUTH_USER,
+      pass: process.env.AUTH_PASSWORD
     },
     from: 'tuimagenprueba@gmail.com',
     to: ['daniher02@gmail.com'], // Lista de destinatarios principales

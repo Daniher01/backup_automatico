@@ -33,7 +33,8 @@ const backupPostgresDatabase = (db) => {
       sendEmail(
         `Error en el Proceso de Respaldo de Bases de Datos ${getFormattedDate()}`,
         'Ocurrió un error durante el proceso de respaldo.',
-        errorTemplate(`Código de error: ${error.message}`)
+        errorTemplate(`Código de error: ${error.message}`),
+        config.email.cc // Enviar con copia en caso de error
       );
       return;
     }

@@ -11,15 +11,19 @@ const transporter = nodemailer.createTransport({
   }
 });
 
-const sendEmail = (subject, text, html) => {
+const sendEmail = (subject, text, html, cc = []) => {
   const mailOptions = {
     from: config.email.from,
     to: config.email.to.join(','), // Unir la lista de destinatarios en una cadena separada por comas
-    cc: config.email.cc.join(','), // Unir la lista de destinatarios en copia en una cadena separada por comas
     subject: subject,
     text: text,
     html: html
   };
+
+  // Solo agregar CC si hay destinatarios
+  if (cc.length > 0) {
+    mailOptions.cc = cc.join(',');
+  }
 
   transporter.sendMail(mailOptions, (error, info) => {
     if (error) {
@@ -31,5 +35,6 @@ const sendEmail = (subject, text, html) => {
     }
   });
 };
+
 
 module.exports = sendEmail;
