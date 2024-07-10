@@ -32,8 +32,26 @@ const backupFiles = () => {
   rsync.on('close', (code) => {
     if (code === 0) {
       logger.info('File sync completed successfully.');
+      const successText = `El proceso de respaldo de archivos completó exitosamente.`;
+      const details = {
+        title: successText,
+        backupPath: config.backupPathOriginal,
+        backupName: sourceDir,
+        Hora : getFormattedDateHour()
+      };
+      sendEmail(
+        `Respaldo de Archivos Tu Imagen ${getFormattedDate()}`,
+        successText,
+        successTemplate(details)
+      );
     } else {
       logger.error(`File sync process exited with code ${code}`);
+      sendEmail(
+        `Error en el Proceso de Respaldo de archivos ${getFormattedDate()}`,
+        'Ocurrió un error durante el proceso de respaldo.',
+        errorTemplate(`Código de error: ${code}`),
+        config.email.cc // Enviar con copia en caso de error
+      );
     }
   });
 };
