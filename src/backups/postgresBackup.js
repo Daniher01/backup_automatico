@@ -5,15 +5,16 @@ const path = require('path');
 const sendEmail = require('../utils/email');
 const successTemplate = require('../templates/successTemplate');
 const errorTemplate = require('../templates/errorTemplate');
+const moment = require('moment-timezone');
+
 
 const getFormattedDateHour = () => {
-  const now = new Date();
-  return now.toISOString()
+  return moment().tz('America/Santiago').format('HH:mm:ss');
 }
 
 const getFormattedDate = () => {
-  const now = new Date();
-  return now.toISOString().split('T')[0]; // Formato YYYY-MM-DD
+  return moment().tz('America/Santiago').format('DD-MM-YYYY');
+
 };
 
 const backupPostgresDatabase = (db) => {
