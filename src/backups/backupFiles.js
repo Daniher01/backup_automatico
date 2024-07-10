@@ -13,7 +13,7 @@ const backupFiles = () => {
     '--stats',
     '-e', `ssh -i ${sshKeyPath} -p ${sshPort}`,
     `${serverUser}@${serverIp}:${sourceDir}`,
-    `${backupPathVirtual}/files`
+    `${backupPathVirtual}`
   ];
 
   logger.info('Starting file sync...');
