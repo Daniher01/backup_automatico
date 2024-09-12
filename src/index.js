@@ -17,12 +17,12 @@ const logger = require('./utils/logger');
 
 // ? ejecución automatica
 
-// cron.schedule('0 2 * * *', () => {
-//     // ? todos los días a las 2 am
-//     logger.info('Starting scheduled database backups...');
-//     backupAllPostgresDatabases();
-//     backupAllMysqlDatabases();
-//   });
+cron.schedule('0 2 * * *', () => {
+    // ? todos los días a las 2 am
+    logger.info('Starting scheduled database backups...');
+    backupAllPostgresDatabases();
+    backupAllMysqlDatabases();
+  });
 
 // cron.schedule('0 3 1 * *', () => {
 //     // ? el primero de cada mes a las 3 am
@@ -36,6 +36,6 @@ const logger = require('./utils/logger');
 // backupAllMysqlDatabases();
 
 // logger.info('iniciando backcup files manual...')
-backupFiles();
+//backupFiles();
 
 logger.info('Backup automation script started.');
