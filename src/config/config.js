@@ -35,6 +35,7 @@ module.exports = {
     // }
   ],
   backupPathVirtual: process.env.BACKUP_PATH_VIRTUAL,
+  backupPathVirtualMnt: process.env.BACKUP_PATH_VIRTUAL_MONTADO,
   backupPathOriginal: process.env.BACKUP_PATH_ORIGINAL,
   sourceDir: process.env.SOURCE_DIR,
   serverIp: process.env.SERVER_IP,
@@ -48,7 +49,8 @@ module.exports = {
       pass: process.env.AUTH_PASSWORD
     },
     from: process.env.AUTH_USER,
-    to: ['administracion@tuimagenrx.cl', 'francisco.toloza@tuimagenrx.cl'], // Lista de destinatarios principales
-    cc: ['johakrys1109@gmail.com', 'daniher02@gmail.com', 'johangutierrez@outlook.cl'] // Lista de destinatarios en copia
+    // to: ['administracion@tuimagenrx.cl', 'francisco.toloza@tuimagenrx.cl'], // Lista de destinatarios principales
+    // cc: ['johakrys1109@gmail.com', 'daniher02@gmail.com', 'johangutierrez@outlook.cl'] // Lista de destinatarios en copia
+    to: ['daniher02@gmail.com']
   }
 };
