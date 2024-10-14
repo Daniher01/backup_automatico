@@ -21,7 +21,7 @@ cron.schedule('0 2 * * *', () => {
     // ? todos los días a las 2 am
     logger.info('Starting scheduled database backups...');
     backupAllPostgresDatabases();
-    backupAllMysqlDatabases();
+    // backupAllMysqlDatabases();
   });
 
 // cron.schedule('0 3 1 * *', () => {
