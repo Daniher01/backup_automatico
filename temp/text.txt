@@ -1,0 +1,1 @@
+Archivo para permitir que git haga el seguimiento de la carpeta temp
