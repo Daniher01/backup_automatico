@@ -49,8 +49,8 @@ module.exports = {
       pass: process.env.AUTH_PASSWORD
     },
     from: process.env.AUTH_USER,
-    // to: ['administracion@tuimagenrx.cl', 'francisco.toloza@tuimagenrx.cl', 'informatica@agenciaideaspro.cl'], // Lista de destinatarios principales
-    to: ['daniher02@gmail.com'], // Lista de destinatarios principales
+    to: ['administracion@tuimagenrx.cl', 'francisco.toloza@tuimagenrx.cl', 'informatica@agenciaideaspro.cl'], // Lista de destinatarios principales
+    // to: ['daniher02@gmail.com'], // Lista de destinatarios principales
     cc: ['johakrys1109@gmail.com', 'daniher02@gmail.com', 'johangutierrez@outlook.cl'], // Lista de destinatarios en copia
   },
   s3: {
