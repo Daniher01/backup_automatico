@@ -49,7 +49,15 @@ module.exports = {
       pass: process.env.AUTH_PASSWORD
     },
     from: process.env.AUTH_USER,
-    to: ['administracion@tuimagenrx.cl', 'francisco.toloza@tuimagenrx.cl', 'informatica@agenciaideaspro.cl'], // Lista de destinatarios principales
-    cc: ['johakrys1109@gmail.com', 'daniher02@gmail.com', 'johangutierrez@outlook.cl'] // Lista de destinatarios en copia
+    // to: ['administracion@tuimagenrx.cl', 'francisco.toloza@tuimagenrx.cl', 'informatica@agenciaideaspro.cl'], // Lista de destinatarios principales
+    to: ['daniher02@gmail.com'], // Lista de destinatarios principales
+    cc: ['johakrys1109@gmail.com', 'daniher02@gmail.com', 'johangutierrez@outlook.cl'], // Lista de destinatarios en copia
+  },
+  s3: {
+    accessKeyId: process.env.S3_ACCESS_KEY,
+    secretAccessKey: process.env.S3_SECRET_KEY,
+    endpoint: 'https://sfo3.digitaloceanspaces.com',
+    bucket: 'backup-database-tuimagen',
+    region: 'sfo3'
   }
 };
